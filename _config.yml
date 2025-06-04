@@ -1,133 +1,114 @@
-#page title
-page_title                                : ReadHero                                 # Automatically populates with app name if not set and if iOS app ID is set. Otherwise enter manually.
+# Page title
+page_title: "ReadHero" # Automatically populates with app name if not set and if iOS app ID is set. Otherwise enter manually.
 
 # App Info
-ios_app_id                                : 6450433398                                # Required. Enter iOS app ID to automatically populate name, price and icons (e.g. 718043190).
-ios_app_country                           : us                                        # Required outside USA. Enter 2 letter country code as in https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
+ios_app_id: "6450433398" # Required. Enter iOS app ID to automatically populate name, price and icons (e.g. 718043190).
+ios_app_country: "us" # Required outside USA. Enter 2 letter country code as in https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
 
-appstore_link                             : https://apps.apple.com/us/app/readhero-tbr-book-tracker/id6450433398
-playstore_link                            :                                           # Enter Google Play Store URL.
-presskit_download_link                    :                                           # No press kit available
+appstore_link: "https://apps.apple.com/us/app/readhero-tbr-book-tracker/id6450433398"
+playstore_link: "" # Enter Google Play Store URL
+presskit_download_link: "" # No press kit available
 
-app_icon                                  :                                            # Automatically populates
-app_name                                  : ReadHero - TBR Book Tracker                # Automatically populated from iOS ID
-app_price                                 : Free                                      # Automatically populated
-app_description                           : Track your reading and remember more with notes, stats, and organization.
+app_icon: "" # Automatically populates
+app_name: "ReadHero - TBR Book Tracker" # Automatically populated from iOS ID
+app_price: "Free" # Automatically populated
+app_description: "Track your reading and remember more with notes, stats, and organization."
 
-enable_smart_app_banner                   : true
-
+enable_smart_app_banner: true
 
 # Information About Yourself
-your_name                                 : Dennis Sima
-your_link                                 : https://www.readhero.de
-your_city                                 :                                           # Optional
-email_address                             : readheroapp@gmail.com                                           # Optional
-linkedin_username                         : readheroapp
-linkedin_company                          :                                           
-facebook_username                         :                                           
-instagram_username                        : readheroapp
-twitter_username                          : readheroapp
-github_username                           :                                           
-youtube_username                          : 
-mastodon_link                             : 
+your_name: "Dennis Sima"
+your_link: "https://www.readhero.de"
+your_city: "" # Optional
+email_address: "readheroapp@gmail.com" # Optional
+linkedin_username: "readheroapp"
+linkedin_company: ""
+facebook_username: ""
+instagram_username: "readheroapp"
+twitter_username: "readheroapp"
+github_username: ""
+youtube_username: ""
+mastodon_link: ""
 
+# Feature List
+features:
+  - title: "Organize Your Library"
+    description: "Add books manually, by barcode, or search over a million titles. Track TBR and finished books in one place."
+    fontawesome_icon_name: "book"
 
+  - title: "Track Your Reading Progress"
+    description: "Forget bookmarks—track your page progress for each book directly in the app."
+    fontawesome_icon_name: "chart-line"
 
-# Feature List                            Edit, add or remove features to be presented.
-features                                  :
+  - title: "Take Powerful Notes"
+    description: "Boost retention by writing notes while reading. Review them anytime—even years later."
+    fontawesome_icon_name: "sticky-note"
 
-  - title                                 : Organize Your Library
-    description                           : Add books manually, by barcode, or search over a million titles. Track TBR and finished books in one place.
-    fontawesome_icon_name                 : book
+  - title: "Personalized Ratings"
+    description: "Rate and reflect on books to strengthen memory and improve future reading decisions."
+    fontawesome_icon_name: "star-half-alt"
 
-  - title                                 : Track Your Reading Progress
-    description                           : Forget bookmarks—track your page progress for each book directly in the app.
-    fontawesome_icon_name                 : chart-line
+  - title: "Group Your Books"
+    description: "Create custom groups to organize books like playlists—favorites, genre, authors, and more."
+    fontawesome_icon_name: "folder-open"
 
-  - title                                 : Take Powerful Notes
-    description                           : Boost retention by writing notes while reading. Review them anytime—even years later.
-    fontawesome_icon_name                 : sticky-note
+  - title: "View Reading Stats"
+    description: "Get insights on how long you read, what you’ve read, and your overall reading habits."
+    fontawesome_icon_name: "chart-pie"
 
-  - title                                 : Personalized Ratings
-    description                           : Rate and reflect on books to strengthen memory and improve future reading decisions.
-    fontawesome_icon_name                 : star-half-alt
+  - title: "Sync with App Store"
+    description: "App icon, name, and pricing are pulled directly from the App Store via your iOS App ID."
+    fontawesome_icon_name: "sync"
 
-  - title                                 : Group Your Books
-    description                           : Create custom groups to organize books like playlists—favorites, genre, authors, and more.
-    fontawesome_icon_name                 : folder-open
+  - title: "Smart App Banner"
+    description: "iOS users get a smart banner to quickly open or download the app."
+    fontawesome_icon_name: "arrow-alt-circle-down"
 
-  - title                                 : View Reading Stats
-    description                           : Get insights on how long you read, what you’ve read, and your overall reading habits.
-    fontawesome_icon_name                 : chart-pie
+  - title: "Social Media Friendly"
+    description: "Add your social media links via the config file and connect with your readers."
+    fontawesome_icon_name: "share-alt"
 
-  - title                                 : Sync with App Store
-    description                           : App icon, name, and pricing are pulled directly from the App Store via your iOS App ID.
-    fontawesome_icon_name                 : sync
-
-  - title                                 : Smart App Banner
-    description                           : iOS users get a smart banner to quickly open or download the app.
-    fontawesome_icon_name                 : arrow-alt-circle-down
-
-  - title                                 : Social Media Friendly
-    description                           : Add your social media links via the config file and connect with your readers.
-    fontawesome_icon_name                 : share-alt
-  - title                                 : # New Feature Title
-    description                           : # New Feature Description
-    fontawesome_icon_name                 : # Enter Font Awesome icon name (e.g. star). Find icons on fontawesome.com/icons.
-
-
+  # Placeholder for a new feature
+  - title: "Your New Feature Title"
+    description: "Your New Feature Description"
+    fontawesome_icon_name: "star" # Replace with actual Font Awesome icon
 
 # Theme Settings
-topbar_color                              : "#000000"
-topbar_transparency                       : 0.1
-topbar_title_color                        : "#ffffff"
+topbar_color: "#000000"
+topbar_transparency: 0.1
+topbar_title_color: "#ffffff"
 
-cover_image                               : assets/headerimage.png                    # Replace with alternative image path or image URL.
-cover_overlay_color                       : "#363b3d"
-cover_overlay_transparency                : 0.8
+cover_image: "assets/headerimage.png"
+cover_overlay_color: "#363b3d"
+cover_overlay_transparency: 0.8
 
-device_color                              : black                                     # Set to: blue, black, yellow, coral or white.
+device_color: "black" # Set to: blue, black, yellow, coral or white.
 
-body_background_color                     : "#ffffff"
+body_background_color: "#ffffff"
+link_color: "#1d63ea"
 
-link_color                                : "#1d63ea"
+app_title_color: "#ffffff"
+app_price_color: "#ffffff"
+app_description_color: "#ffffff"
 
-app_title_color                           : "#ffffff"
-app_price_color                           : "#ffffff"
-app_description_color                     : "#ffffff"
+feature_title_color: "#000000"
+feature_text_color: "#666666"
 
-feature_title_color                       : "#000000"
-feature_text_color                        : "#666666"
+feature_icons_foreground_color: "#1d63ea"
+feature_icons_background_color: "#e6e6e6"
 
-feature_icons_foreground_color            : "#1d63ea"
-feature_icons_background_color            : "#e6e6e6"
+social_icons_foreground_color: "#666666"
+social_icons_background_color: "#e6e6e6"
 
-social_icons_foreground_color             : "#666666"
-social_icons_background_color             : "#e6e6e6"
-
-footer_text_color                         : "#666666"
-
-
-
-
-
-
-
-
-
-
-
-
+footer_text_color: "#666666"
 
 ####################################################
 ### Jekyll Configuration. No need to touch this. ###
 ####################################################
 
-# Set the Sass partials directory, as we're using @imports
 sass:
-  style: :compressed # You might prefer to minify using :compressed
+  style: :compressed
 
-# Exclude these files from your production _site
 exclude:
   - LICENSE
   - README.md
@@ -138,5 +119,4 @@ collections:
     output: true
     permalink: /:path/
 
-# Markdown rendering
 markdown: kramdown
