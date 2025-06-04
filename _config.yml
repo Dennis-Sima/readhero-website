@@ -10,7 +10,7 @@ playstore_link                            :                                     
 presskit_download_link                    :                                           # No press kit available
 
 app_icon                                  :                                            # Automatically populates
-app_name                                  : ReadHero: TBR Book Tracker                # Automatically populated from iOS ID
+app_name                                  : ReadHero - TBR Book Tracker                # Automatically populated from iOS ID
 app_price                                 : Free                                      # Automatically populated
 app_description                           : Track your reading and remember more with notes, stats, and organization.
 
