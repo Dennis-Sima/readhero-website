@@ -6,29 +6,27 @@ ios_app_id: "6450433398" # Required. Enter iOS app ID to automatically populate 
 ios_app_country: "us" # Required outside USA. Enter 2 letter country code as in https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
 
 appstore_link: "https://apps.apple.com/us/app/readhero-tbr-book-tracker/id6450433398"
-playstore_link: "" # Enter Google Play Store URL
-presskit_download_link: "" # No press kit available
 
 app_icon: "" # Automatically populates
 app_name: "ReadHero - TBR Book Tracker" # Automatically populated from iOS ID
-app_price: "Free" # Automatically populated
-app_description: "Track your reading and remember more with notes, stats, and organization."
+app_price: "The future #1 Book Tracker"
+app_description: "The smartest way to track what you read and love what you read."
 
 enable_smart_app_banner: true
 
+#Appstore Performance Metrics
+downloads: "20.000+"
+ratings: "364+"
+rating_avg: "4.7"
+
 # Information About Yourself
 your_name: "Dennis Sima"
-your_link: "https://www.readhero.de"
-your_city: "" # Optional
-email_address: "readheroapp@gmail.com" # Optional
-linkedin_username: "readheroapp"
-linkedin_company: ""
-facebook_username: ""
+your_link: "https://at.linkedin.com/in/dennis-sima"
+your_city: "Austria 🇦🇹 & Germany 🇩🇪"
+email_address: "readheroapp@gmail.com"
+linkedin_company: "readheroapp"
 instagram_username: "readheroapp"
 twitter_username: "readheroapp"
-github_username: ""
-youtube_username: ""
-mastodon_link: ""
 
 # Feature List
 features:
@@ -56,22 +54,22 @@ features:
     description: "Get insights on how long you read, what you’ve read, and your overall reading habits."
     fontawesome_icon_name: "chart-pie"
 
-  - title: "Sync with App Store"
-    description: "App icon, name, and pricing are pulled directly from the App Store via your iOS App ID."
+  - title: "Sync with iCloud"
+    description: "Keep your books, reading status, and notes—safely synced across all your iOS devices."
     fontawesome_icon_name: "sync"
 
-  - title: "Smart App Banner"
-    description: "iOS users get a smart banner to quickly open or download the app."
+  - title: "Home Screen Widgets"
+    description: "Add widgets to your iOS home screen for quick access to your current read or reading stats."
     fontawesome_icon_name: "arrow-alt-circle-down"
 
-  - title: "Social Media Friendly"
-    description: "Add your social media links via the config file and connect with your readers."
+  - title: "Share on Social Media"
+    description: "Post to your social profiles and easily share reading progress, book reviews, or finished titles."
     fontawesome_icon_name: "share-alt"
 
-  # Placeholder for a new feature
-  - title: "Your New Feature Title"
-    description: "Your New Feature Description"
-    fontawesome_icon_name: "star" # Replace with actual Font Awesome icon
+  - title: "Goodreads Import"
+    description: "Import your Goodreads library and reading history to start tracking in your new favorite app."
+    fontawesome_icon_name: "book"
+
 
 # Theme Settings
 topbar_color: "#000000"
@@ -82,7 +80,7 @@ cover_image: "assets/headerimage.png"
 cover_overlay_color: "#363b3d"
 cover_overlay_transparency: 0.8
 
-device_color: "black" # Set to: blue, black, yellow, coral or white.
+device_color: "ready" # Set to: blue, black, yellow, coral or white.
 
 body_background_color: "#ffffff"
 link_color: "#1d63ea"
