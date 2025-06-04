@@ -1,79 +1,76 @@
 #page title
-page_title                                :                                           # Automatically populates with app name if not set and if iOS app ID is set. Otherwise enter manually.
+page_title                                : ReadHero                                 # Automatically populates with app name if not set and if iOS app ID is set. Otherwise enter manually.
 
 # App Info
-ios_app_id                                : 1234793120                                # Required. Enter iOS app ID to automatically populate name, price and icons (e.g. 718043190).
+ios_app_id                                : 6450433398                                # Required. Enter iOS app ID to automatically populate name, price and icons (e.g. 718043190).
 ios_app_country                           : us                                        # Required outside USA. Enter 2 letter country code as in https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
 
-appstore_link                             :                                           # Automatically populates if not set and if iOS app ID is set. Otherwise enter manually.
+appstore_link                             : https://apps.apple.com/us/app/readhero-tbr-book-tracker/id6450433398
 playstore_link                            :                                           # Enter Google Play Store URL.
-presskit_download_link                    : https://emilbaehr.com                                          # Enter a link to downloadable file or (e.g. public Dropbox link to a .zip file). 
-                                                                                      # Or upload your press kit file to assets and set path accordingly (e.g. "assets/your_press_kit.zip").
+presskit_download_link                    :                                           # No press kit available
 
-app_icon                                  : # assets/appicon.png                      # Automatically populates if not set and if iOS app ID is set.  Otherwise enter path to icon file manually.
-app_name                                  :                                           # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
-app_price                                 :                                           # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
-app_description                           : Write a short tagline for your app.
+app_icon                                  :                                            # Automatically populates
+app_name                                  : ReadHero: TBR Book Tracker                # Automatically populated from iOS ID
+app_price                                 : Free                                      # Automatically populated
+app_description                           : Track your reading and remember more with notes, stats, and organization.
 
-enable_smart_app_banner                   : true                                      # Set to true to show a smart app banner at top of page on mobile devices.
-
+enable_smart_app_banner                   : true
 
 
 # Information About Yourself
-your_name                                 : Emil Baehr                                
-your_link                                 : https://emilbaehr.com                     
-your_city                                 : Copenhagen                                
-email_address                             : emil.baehr@gmail.com
-linkedin_username                         :                                           
+your_name                                 : Dennis Sima
+your_link                                 : https://www.readhero.de
+your_city                                 :                                           # Optional
+email_address                             : readheroapp@gmail.com                                           # Optional
+linkedin_username                         : readheroapp
 linkedin_company                          :                                           
 facebook_username                         :                                           
-instagram_username                        : ebaehr
-twitter_username                          : ebaehr
-github_username                           : emilbaehr
-youtube_username                          :
-mastodon_link                             : https://mastodon.social/@ebaehr
+instagram_username                        : readheroapp
+twitter_username                          : readheroapp
+github_username                           :                                           
+youtube_username                          : 
+mastodon_link                             : 
 
 
 
 # Feature List                            Edit, add or remove features to be presented.
 features                                  :
 
-  - title                                 : GitHub Pages Jekyll Theme
-    description                           : Designed for GitHub Pages. Fork. Edit _config.yml. Upload screenshot/video. Push to gh-pages branch. Voilá!
-    fontawesome_icon_name                 : magic
-    
-  - title                                 : iPhone Device Preview
-    description                           : Preview your app in the context of an iPhone device. Five different device colors included.
-    fontawesome_icon_name                 : mobile
+  - title                                 : Organize Your Library
+    description                           : Add books manually, by barcode, or search over a million titles. Track TBR and finished books in one place.
+    fontawesome_icon_name                 : book
 
-  - title                                 : Video Support
-    description                           : Preview app video on the iPhone device simply by placing your video files in the videos folder.
-    fontawesome_icon_name                 : play-circle
+  - title                                 : Track Your Reading Progress
+    description                           : Forget bookmarks—track your page progress for each book directly in the app.
+    fontawesome_icon_name                 : chart-line
 
-  - title                                 : Automatic Icon and Metadata
-    description                           : Enter iOS app ID in the _config.yml file to automatically fetch app icon, price and App Store Link.
+  - title                                 : Take Powerful Notes
+    description                           : Boost retention by writing notes while reading. Review them anytime—even years later.
+    fontawesome_icon_name                 : sticky-note
+
+  - title                                 : Personalized Ratings
+    description                           : Rate and reflect on books to strengthen memory and improve future reading decisions.
+    fontawesome_icon_name                 : star-half-alt
+
+  - title                                 : Group Your Books
+    description                           : Create custom groups to organize books like playlists—favorites, genre, authors, and more.
+    fontawesome_icon_name                 : folder-open
+
+  - title                                 : View Reading Stats
+    description                           : Get insights on how long you read, what you’ve read, and your overall reading habits.
+    fontawesome_icon_name                 : chart-pie
+
+  - title                                 : Sync with App Store
+    description                           : App icon, name, and pricing are pulled directly from the App Store via your iOS App ID.
     fontawesome_icon_name                 : sync
 
-  - title                                 : Easy to Tweak
-    description                           : Tweak accent color, images, icons and transparency via the _config.yml file. No HTML/CSS needed.
-    fontawesome_icon_name                 : adjust
-  
-  - title                                 : Feature List
-    description                           : Add features (like this one) to your site via the _config.yml file. No HTML/CSS needed.
-    fontawesome_icon_name                 : star
-
   - title                                 : Smart App Banner
-    description                           : Display a smart app banner on iOS devices.
+    description                           : iOS users get a smart banner to quickly open or download the app.
     fontawesome_icon_name                 : arrow-alt-circle-down
 
-  - title                                 : Social Links
-    description                           : Easily add social media accounts and contact info in the footer via the _config.yml file. No HTML/CSS needed.
-    fontawesome_icon_name                 : link
-
-  - title                                 : FontAwesome Support
-    description                           : Pick custom Font Awesome icons for the feature list via the _config.yml file. No HTML/CSS needed.
-    fontawesome_icon_name                 : info-circle
-
+  - title                                 : Social Media Friendly
+    description                           : Add your social media links via the config file and connect with your readers.
+    fontawesome_icon_name                 : share-alt
   - title                                 : # New Feature Title
     description                           : # New Feature Description
     fontawesome_icon_name                 : # Enter Font Awesome icon name (e.g. star). Find icons on fontawesome.com/icons.
