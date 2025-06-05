@@ -9,8 +9,8 @@ appstore_link: "https://apps.apple.com/us/app/readhero-tbr-book-tracker/id645043
 
 app_icon: "" # Automatically populates
 app_name: "ReadHero - TBR Book Tracker" # Automatically populated from iOS ID
-app_price: "The future #1 Book Tracker"
-app_description: "The smartest way to track what you read and love what you read."
+app_price: "Remember books by taking notes"
+app_description: "The #1 Book Tracker 📚✨ Loved by thousands!️"
 
 enable_smart_app_banner: true
 
@@ -62,10 +62,6 @@ features:
     description: "Add widgets to your iOS home screen for quick access to your current read or reading stats."
     fontawesome_icon_name: "arrow-alt-circle-down"
 
-  - title: "Share on Social Media"
-    description: "Post to your social profiles and easily share reading progress, book reviews, or finished titles."
-    fontawesome_icon_name: "share-alt"
-
   - title: "Goodreads Import"
     description: "Import your Goodreads library and reading history to start tracking in your new favorite app."
     fontawesome_icon_name: "book"
@@ -76,7 +72,7 @@ topbar_color: "#000000"
 topbar_transparency: 0.1
 topbar_title_color: "#ffffff"
 
-cover_image: "assets/headerimage.png"
+cover_image: "assets/header-books.jpg"
 cover_overlay_color: "#363b3d"
 cover_overlay_transparency: 0.8
 

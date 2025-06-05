@@ -1,5 +1,5 @@
 <footer>
-	<img src="assets/appshowcase.png" alt="Platform 1">
+	<img id="fullscreenImage" src="assets/appshowcase.png" alt="Platform 1" style="cursor: zoom-in;" />
 	{% include appstore.html %}
 	{% include internetPresenceSection.html %}
 	{% if site.your_name %}
@@ -89,3 +89,16 @@
 		{% endif %}
 	</div>
 </footer>
+<script>
+	const img = document.getElementById('fullscreenImage');
+
+	img.addEventListener('click', () => {
+		if (img.requestFullscreen) {
+			img.requestFullscreen();
+		} else if (img.webkitRequestFullscreen) { // Safari
+			img.webkitRequestFullscreen();
+		} else if (img.msRequestFullscreen) { // IE11
+			img.msRequestFullscreen();
+		}
+	});
+</script>

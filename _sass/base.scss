@@ -64,9 +64,14 @@ drop-shadow(0px 1px 1px rgba(#000, 0.2)
 	padding: 0;
 }
 
+//
+.internetGridItem:hover {
+	transform: scale(1.05);
+}
+
 //internet presence
 .internetPresenceSection {
-	padding: 6rem 2rem;
+	padding: 4rem 2rem;
 	text-align: center;
 	background: none;
 }
@@ -124,18 +129,28 @@ drop-shadow(0px 1px 1px rgba(#000, 0.2)
 img[src*="appshowcase.png"] {
 	display: block;
 	width: 80%;
-	margin: 6rem auto 3rem; /* More top margin (was 4rem, now 6rem) */
+	margin: 8rem auto 3rem;
 	height: auto;
-	border-radius: 30px; /* Rounded corners */
+	border-radius: 30px;
+	transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
+/* Hover animation */
+img[src*="appshowcase.png"]:hover {
+	transform: scale(1.05) rotate(-1deg);
+	box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
 
 //appstore metrics
+.appstoreMetricsSection {
+	text-align: center;
+	background: none;
+}
 
 .appStatsHeadline {
 	font-size: 4rem;
 	font-weight: 800;
-	margin-top: 10rem;
+	margin-top: 5rem;
 	color: #111;
 }
 
@@ -193,4 +208,62 @@ img[src*="appshowcase.png"] {
 		align-items: center;
 		text-align: center;
 	}
+}
+
+.appStatsItem {
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	cursor: pointer;
+}
+
+.appStatsItem:hover {
+	transform: translateY(-10px) scale(1.03);
+	box-shadow: 0 16px 32px rgba(0, 0, 0, 0.15);
+}
+
+.appStatsItem:hover .appStatsIcon i {
+	color: #005ce6; /* Brighter blue on hover */
+	transform: rotate(-5deg) scale(1.1);
+}
+
+.appStatsIcon i {
+	transition: color 0.3s ease, transform 0.3s ease;
+}
+
+
+//features hover style
+.feature {
+	transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, border-radius 0.3s ease;
+	cursor: pointer;
+	border-radius: 20px;
+	background-color: #fff;
+}
+
+.feature:hover {
+	transform: translateY(-10px) scale(1.03);
+}
+
+.feature:hover .fa-stack {
+	transform: rotate(-5deg) scale(1.1);
+	transition: transform 0.3s ease;
+}
+
+.feature:hover .iconBack {
+	color: #007BFF;
+	transition: color 0.3s ease;
+}
+
+.feature:hover .iconTop {
+	color: #fff;
+	transition: color 0.3s ease;
+}
+
+
+//AppStore button
+.appStore {
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.appStoreLink:hover .appStore {
+	transform: scale(1.05);
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }

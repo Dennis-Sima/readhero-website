@@ -371,7 +371,7 @@ nav > ul li a:active {
 } 
 
 .appStore {
-	height: 75px;
+	height: 65px;
 }
 
 
@@ -436,13 +436,17 @@ nav > ul li a:active {
 
 @media only screen and (max-width: 992px) {
 
+	.appStore {
+		height: 55px;
+	}
+
 	.iphonePreview {
 		display: flex;
 		background-size: 260px auto;
 		background-position: center 0;
-		margin-top: 47px;
+		margin-top: 10px;
 		justify-content: center;
-		padding-bottom: 75px;
+		padding-bottom: 25px;
 	}
 
 	.iphoneScreen {
@@ -479,7 +483,7 @@ nav > ul li a:active {
 	justify-content: flex-start;
 	flex-grow: 1;
 	flex-wrap: wrap;
-	margin-top: 93px;
+	margin-top: 40px;
 }
 
 .feature {
