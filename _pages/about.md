@@ -4,67 +4,56 @@ title: About Us
 include_in_header: true
 ---
 
-# About ReadHero
+# The ReadHero Story
 
-Hi, I’m Dennis 👋 — and I’m from Austria 🇦🇹
+Hi, I’m Dennis 👋 I am an indie developer from Austria 🇦🇹
 
-After school, I kept running into a problem:  
-I was reading amazing books… and then forgetting them.
+The story of ReadHero started with a frustrating realization. I used to finish a book, close the cover, and feel a deep sense of accomplishment. But a few weeks later, when I tried to explain a key concept to a friend, I’d draw a blank.
 
-All those powerful ideas, quotes, and insights were slipping away, and it really frustrated me. I started jotting down notes in the default Notes app on iOS. That helped — for a while. But after 10+ books, it turned into a chaotic mess. I couldn’t find anything, and the motivation to keep going dropped fast.
+**I realized I had become a "professional page turner" instead of a learner.**
 
-In 2021, during my iOS internship, I thought:  
+I was consuming life changing ideas, but I wasn't retaining them. My highlights were trapped in book margins or buried in a messy Notes app, never to be seen again. I was doing the work of reading, but I was losing the reward of remembering.
 
-**Why not build something better?**
+In 2021, I decided to stop searching for the perfect tool and start building it.
 
-So I did.
+### Handcrafted with Intent
 
-Armed with an old 2011 MacBook Pro (8 GB RAM and a lot of patience), I started building the app I wished existed. I wanted something fast, simple, beautiful — something that felt as good to use as finishing a great book.
+Armed with an old 2011 MacBook Pro and a lot of patience, I began coding the app I wished existed. I wanted something fast, native, and beautiful... a digital home for my thoughts that felt as intentional as the books I was reading.
 
-Every line of code in ReadHero was written by me in native Swift — no templates, no shortcuts.
+Every line of code in ReadHero is written by me in native Swift. No shortcuts, no templates... just a focus on building the best possible experience for people who love to read.
 
-But I wasn’t alone on this journey.
+### A Family Project
 
-My brother helped define the soul of ReadHero. He hand-drew all the illustrations — no AI, no stock art, just pure creativity. The name **ReadHero** and our iconic hero logo? All him. It's a true family project, built with love and intention.
-
----
+I wasn’t alone on this journey. My brother helped define the soul of ReadHero. He hand drew every illustration in the app... no AI, no stock art, just pure human creativity. From our name to our iconic hero logo, this is a true family project built with love and intention.
 
 ## Why ReadHero Exists
 
-ReadHero isn’t just another book tracker. It’s for readers who care deeply about what they read. People who highlight, reflect, and want to **remember** the good stuff — not just finish another book.
+ReadHero isn’t just another book tracker. It’s for the intentional reader. It’s for the students, the thinkers, and the lifelong learners who believe that a book's value isn't found in finishing it, but in what you take away from it.
 
-We believe:
-- 📖 Reading is powerful
-- 🧠 Remembering is even more powerful
-- 💡 Ideas deserve to be captured, reflected on, and revisited
+### Our Philosophy
 
-Whether you're a student, a lifelong learner, or someone who reads with purpose — ReadHero is here to help you read better and retain more.
+* 📖 Reading is an investment. Don't let your insights fade.
+* 🧠 Remembering is power. Ideas deserve to be revisited and reflected on.
+* 💡 Clarity over clutter. Your notes should be a library, not a graveyard.
 
----
+## Our Values
 
-## What We Value
+**Handcrafted Quality**  
+Every feature is carefully designed. We believe software should feel personal, not mass produced.
 
-❤️ **Handcrafted, not mass-produced**  
-Every feature is carefully designed. Every detail matters.
+**Privacy First**  
+Your notes are yours. We don’t track you, and we never sell your data. Period.
 
-🔒 **Privacy-first**  
-Your notes are yours. We never sell your data. We don’t track you.
+**Human Integrity**  
+In a world of AI generated content, we stay human. Everything you see is hand drawn with care.
 
-🖌️ **Creativity with integrity**  
-No AI-generated graphics. Everything you see is hand-drawn with care.
-
-🚀 **Built to last**  
-We’re not chasing VC funding. We’re just two people building something we believe in.
-
----
+**Built to Last**  
+We aren’t chasing VC funding or exit strategies. We’re just two brothers building something we believe in for a community we care about.
 
 ## What’s Next?
 
-We’re just getting started.
+We’re just getting started. As we add new features, our mission remains the same: **To help you remember what matters.**
 
-New features are on the way, but our mission remains the same:  
-**To help readers remember what matters.**
+Thanks for being part of this journey... it truly means a lot to us.
 
-Thanks for being part of this journey — it truly means a lot.
-
-— Dennis
+**Dennis**
