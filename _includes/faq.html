@@ -235,6 +235,17 @@
         </details>
 
         <details class="faqItem">
+            <summary>Do I need an account?</summary>
+            <div class="faqAnswerWrapper">
+                <div class="faqAnswerContainer">
+                    <div class="faqAnswer">
+                        No, you don’t need an account. I also dislike creating an account for every app just to try it, so you can start using the app right away without signing up.
+                    </div>
+                </div>
+            </div>
+        </details>
+
+        <details class="faqItem">
             <summary>Can I move my books from Goodreads or StoryGraph?</summary>
             <div class="faqAnswerWrapper">
                 <div class="faqAnswerContainer">
@@ -257,36 +268,58 @@
         </details>
 
         <details class="faqItem">
-            <summary>How can I support your work?</summary>
+            <summary>Is there a free trial?</summary>
             <div class="faqAnswerWrapper">
                 <div class="faqAnswerContainer">
                     <div class="faqAnswer">
-                        Beyond the Premium subscription the biggest help is honestly word of mouth. Sharing ReadHero with friends or leaving a kind review on the App Store makes a huge difference for an indie dev like me. I also love hearing your feedback directly.
+                        Yes, you get a 3-day free trial with no charge. <br><br>As a thank you, you can also use this link to unlock an extended 3-month free trial:
+                        <a href="https://apps.apple.com/redeem?ctx=offercodes&id=6450433398&code=FREE3MONTHS" target="_blank">redeem offer
+                        </a>
                     </div>
                 </div>
             </div>
         </details>
+
+        <details class="faqItem">
+            <summary>How can I support your work?</summary>
+            <div class="faqAnswerWrapper">
+                <div class="faqAnswerContainer">
+                    <div class="faqAnswer">
+                        Beyond the Premium subscription, the biggest support is honestly word of mouth. Sharing ReadHero with friends or leaving a kind review on the App Store makes a huge difference for an indie developer like me.<br><br>
+
+                        With a subscription, you also help cover the ongoing costs of the app, which I try to keep as low as possible. I also really appreciate hearing your feedback directly.                    </div>
+                </div>
+            </div>
+        </details
     </div>
 </section>
 
 <script>
     document.querySelectorAll('.faqItem').forEach(item => {
+        const summary = item.querySelector('summary');
+
+        // Initial state check
         if (item.hasAttribute('open')) {
             item.classList.add('is-active');
         }
 
-        item.addEventListener('click', (e) => {
+        summary.addEventListener('click', (e) => {
+            // Prevent the default <details> toggle so our animation can run
             e.preventDefault();
 
             const isOpening = !item.classList.contains('is-active');
 
             if (isOpening) {
+                // Opening logic
                 item.setAttribute('open', '');
+                // Small delay to allow browser to register 'open' before animating
                 requestAnimationFrame(() => {
                     item.classList.add('is-active');
                 });
             } else {
+                // Closing logic
                 item.classList.remove('is-active');
+                // Wait for the CSS transition (0.4s) before removing the 'open' attribute
                 setTimeout(() => {
                     item.removeAttribute('open');
                 }, 400);
