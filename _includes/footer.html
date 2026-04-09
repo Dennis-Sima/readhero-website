@@ -1,8 +1,10 @@
 <footer>
 	<img id="fullscreenImage" src="assets/appshowcase.png" alt="Platform 1" style="cursor: zoom-in;" />
 	{% include appstore.html %}
-	{% include internetPresenceSection.html %}
-	{% if site.your_name %}
+    {% include internetPresenceSection.html %}
+    {% include faq.html %}
+
+    {% if site.your_name %}
 	<p class="footerText">Made by {% if site.your_link %}<a href="{{ site.your_link }}">{% endif %}{{ site.your_name }}{% if site.your_link %}</a>{% endif %}{% if site.your_city %} in {{ site.your_city }}{% endif %}</p>
 	{% endif %}
 	<div class="footerIcons">

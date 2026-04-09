@@ -1,0 +1,135 @@
+<style>
+    /* --- Section Setup --- */
+    .featuresSection {
+        padding: 100px 20px;
+        background-color: transparent;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    .featuresGrid {
+        max-width: 1300px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+
+    /* --- The Feature Card (Gray Background) --- */
+    .featureItem {
+        background-color: #f6f6f6;
+        border-radius: 50px;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+
+        /* Animation initial state */
+        opacity: 0;
+        transform: translateY(60px) scale(0.96);
+        transition: all 1s cubic-bezier(0.17, 0.84, 0.44, 1);
+    }
+
+    /* --- Mockup Container (Backgrounds Removed) --- */
+
+
+    /* --- The Image --- */
+    .mockupImage {
+        /* SCALE WIDTH FULL */
+        width: 100% !important;
+        height: auto !important;
+        display: block;
+
+        /* IMAGE CORNER RADIUS */
+        border-radius: 30px !important;
+
+        /* Optional: subtle shadow to make the image "pop" from the gray background */
+        filter: drop-shadow(0 15px 35px rgba(0,0,0,0.08));
+        transition: transform 0.6s ease;
+    }
+
+    /* Subtle lift on hover */
+    .featureItem:hover .mockupImage {
+        transform: translateY(-8px);
+    }
+
+    /* --- Text Content --- */
+    .featuresText {
+        color: #555555;
+        font-size: 2rem;
+        line-height: 1.35;
+        margin: 20px 0 0 0;
+        padding: 0 10px;
+        letter-spacing: -0.02em;
+    }
+
+    .featuresText strong {
+        color: #000000;
+        font-weight: 700;
+    }
+
+    /* --- Appear Animation Trigger --- */
+    .featureItem.is-visible {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+
+    /* Staggering the items */
+    .featureItem:nth-child(2) {
+        transition-delay: 0.2s;
+    }
+
+    /* Mobile Layout */
+    @media (max-width: 1024px) {
+        .featuresGrid {
+            grid-template-columns: 1fr;
+        }
+        .featuresText {
+            font-size: 1.6rem;
+        }
+        .featureItem {
+            border-radius: 40px;
+            padding: 30px;
+        }
+    }
+</style>
+
+<section class="featuresSection">
+    <div class="featuresGrid">
+
+        <!-- Left Feature Item -->
+        <div class="featureItem reveal">
+            <div class="mockupWrapper">
+                <img src="assets/left.png" alt="ReadTracker Mockup" class="mockupImage">
+            </div>
+            <p class="featuresText">
+                ReadHero helps you <strong>organize</strong> your <strong>book list, group books</strong> into <strong>collections</strong>, and track your <strong>reading progress</strong>.        </div>
+
+        <!-- Right Feature Item -->
+        <div class="featureItem reveal">
+            <div class="mockupWrapper">
+                <img src="assets/right.png" alt="ReadTracker Mockup" class="mockupImage">
+            </div>
+            <p class="featuresText">
+                <strong>Explore and discover new books</strong> directly in the app, including <strong>bestsellers, popular titles</strong>, and the <strong>most-read books</strong>.            </p>
+        </div>
+
+    </div>
+</section>
+
+<script>
+    // Simple Intersection Observer for the "On Appear" scroll effect
+    const observerOptions = {
+        threshold: 0.12
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('is-visible');
+            }
+        });
+    }, observerOptions);
+
+    document.querySelectorAll('.reveal').forEach(el => {
+        observer.observe(el);
+    });
+</script>

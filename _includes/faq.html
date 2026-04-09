@@ -1,0 +1,296 @@
+<style>
+    /* FAQ Component Styles - Light Theme */
+    .faqSection {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 80px 40px;
+        max-width: 1400px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        /* Forces items to perfectly stack at the top */
+        justify-content: flex-start !important;
+        gap: 0px !important;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    /* Kills invisible empty paragraphs injected by Jekyll/Hugo/WordPress */
+    .faqSection p:empty {
+        display: none !important;
+    }
+
+    /* Header Group */
+    .faqHeader {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        /* Strictly locks the gap beneath the title */
+        margin-bottom: 20px !important;
+        padding: 0 !important;
+    }
+
+    /* Fancy Divider */
+    .faqDivider {
+        display: flex;
+        align-items: center;
+        opacity: 0.7;
+    }
+
+    .faqDivider::before,
+    .faqDivider::after {
+        content: '';
+        display: block;
+        width: 80px;
+        height: 2px;
+        border-radius: 2px;
+        background: linear-gradient(90deg, transparent, #888888);
+    }
+
+    .faqDivider::after {
+        background: linear-gradient(270deg, transparent, #888888);
+    }
+
+    .faqDivider span {
+        color: #888888;
+        margin: 0 15px;
+        font-size: 1.2rem;
+        line-height: 1;
+    }
+
+    /* Centered Heading */
+    .faqHeadline {
+        margin: 20px !important; /* Overrides global site h1 margins */
+        padding: 0 !important;
+        font-size: 5.5rem;
+        font-weight: 600;
+        line-height: 1.1;
+        letter-spacing: -0.04em;
+        text-align: center;
+        background: linear-gradient(180deg, #999999 0%, #111111 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        color: transparent;
+    }
+
+    /* Accordion Wrapper */
+    .faqWrapper {
+        width: 100%;
+        max-width: 1000px;
+        /* Absorbs any extra height in the section, pushing content up */
+        margin-top: 0 !important;
+        margin-bottom: auto !important;
+    }
+
+    .faqItem {
+        border-bottom: 1px solid #e0e0e0;
+        width: 100%;
+    }
+
+    /* Remove the top border on the first item so it looks cleaner against the title */
+    .faqItem:first-of-type {
+        border-top: none;
+    }
+
+    /* The Question (Summary) */
+    .faqItem summary {
+        list-style: none;
+        cursor: pointer;
+        font-size: 2rem;
+        padding: 30px 0;
+        display: flex;
+        align-items: center;
+        font-weight: 600;
+        color: #000000;
+        width: 100%;
+        transition: color 0.4s ease, font-weight 0.4s ease;
+    }
+
+    .faqItem.is-active summary {
+        color: #555555;
+        font-weight: 500;
+    }
+
+    .faqItem summary::-webkit-details-marker {
+        display: none;
+    }
+
+    /* Custom Plus Icon */
+    .faqItem summary::before {
+        content: '+';
+        color: #444444;
+        font-size: 3rem;
+        margin-right: 30px;
+        font-weight: 300;
+        width: 35px;
+        text-align: center;
+        display: block;
+        flex-shrink: 0;
+        transform-origin: center;
+        transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), color 0.4s ease;
+    }
+
+    /* Rotate the + by 45 degrees to perfectly form an X */
+    .faqItem.is-active summary::before {
+        transform: rotate(45deg);
+        color: #888888;
+    }
+
+    /* --- FLAWLESS MASKING ANIMATION --- */
+    .faqAnswerWrapper {
+        display: grid;
+        grid-template-rows: 0fr;
+        transition: grid-template-rows 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .faqItem.is-active .faqAnswerWrapper {
+        grid-template-rows: 1fr;
+    }
+
+    .faqAnswerContainer {
+        overflow: hidden;
+        min-height: 0;
+    }
+
+    .faqAnswer {
+        padding-left: 65px;
+        padding-bottom: 40px;
+        margin: 0;
+        color: #222222;
+        font-size: 1.4rem;
+        line-height: 1.6;
+        opacity: 0;
+        transform: translateY(-5px);
+        transition: opacity 0.2s ease, transform 0.3s ease;
+    }
+
+    .faqItem.is-active .faqAnswer {
+        opacity: 1;
+        transform: translateY(0);
+        transition: opacity 0.4s ease 0.15s, transform 0.4s ease 0.1s;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 1100px) {
+        .faqSection {
+            padding: 60px 20px;
+        }
+        .faqHeadline {
+            font-size: 3.5rem;
+        }
+        .faqItem summary {
+            font-size: 1.5rem;
+            padding: 25px 0;
+        }
+        .faqItem summary::before {
+            font-size: 2.5rem;
+            margin-right: 20px;
+        }
+        .faqAnswer {
+            font-size: 1.1rem;
+            padding-left: 45px;
+        }
+    }
+</style>
+
+<section class="faqSection">
+
+    <div class="faqWrapper">
+        <h1 class="faqHeadline">Frequently asked questions</h1>
+
+        <!-- What is ReadHero? -->
+        <details class="faqItem">
+            <summary>What exactly is ReadHero?</summary>
+            <div class="faqAnswerWrapper">
+                <div class="faqAnswerContainer">
+                    <div class="faqAnswer">
+                        ReadHero is your personal reading companion. It is an app I built to help you organize your library, track your progress, save meaningful notes, and visualize your reading habits through beautiful statistics and challenges.
+                    </div>
+                </div>
+            </div>
+        </details>
+
+        <details class="faqItem">
+            <summary>Who is behind this app?</summary>
+            <div class="faqAnswerWrapper">
+                <div class="faqAnswerContainer">
+                    <div class="faqAnswer">
+                        That would be me, Dennis! I am an indie developer originally from Austria 🇦🇹 and I currently live and work in Germany 🇩🇪. ReadHero is not a project from a big company. It is a solo project I am pouring my heart into to create the best reading tracker available.                    </div>
+                </div>
+            </div>
+        </details>
+
+        <details class="faqItem">
+            <summary>Is an Android version coming?</summary>
+            <div class="faqAnswerWrapper">
+                <div class="faqAnswerContainer">
+                    <div class="faqAnswer">
+                        I hear you. Since I am a solo dev I have to take things one step at a time to keep the quality high. An Android version is definitely in the plans for the future but it will take some time as I am currently focused on making the iOS version the best it can be.
+                    </div>
+                </div>
+            </div>
+        </details>
+
+        <details class="faqItem">
+            <summary>Can I move my books from Goodreads or StoryGraph?</summary>
+            <div class="faqAnswerWrapper">
+                <div class="faqAnswerContainer">
+                    <div class="faqAnswer">
+                        Absolutely. I know how important your reading history is. You can import your data from Goodreads, StoryGraph, and several other platforms. Just export your library as a csv file and you can import everything into ReadHero under Settings with a single tap.
+                    </div>
+                </div>
+            </div>
+        </details>
+
+        <details class="faqItem">
+            <summary>Why are there no ads?</summary>
+            <div class="faqAnswerWrapper">
+                <div class="faqAnswerContainer">
+                    <div class="faqAnswer">
+                        Because I hate them too. I want your reading experience to be peaceful and focused. I have committed to keeping ReadHero ad free. Instead of selling your attention to advertisers I rely on the support of our Premium users to keep the project running.
+                    </div>
+                </div>
+            </div>
+        </details>
+
+        <details class="faqItem">
+            <summary>How can I support your work?</summary>
+            <div class="faqAnswerWrapper">
+                <div class="faqAnswerContainer">
+                    <div class="faqAnswer">
+                        Beyond the Premium subscription the biggest help is honestly word of mouth. Sharing ReadHero with friends or leaving a kind review on the App Store makes a huge difference for an indie dev like me. I also love hearing your feedback directly.
+                    </div>
+                </div>
+            </div>
+        </details>
+    </div>
+</section>
+
+<script>
+    document.querySelectorAll('.faqItem').forEach(item => {
+        if (item.hasAttribute('open')) {
+            item.classList.add('is-active');
+        }
+
+        item.addEventListener('click', (e) => {
+            e.preventDefault();
+
+            const isOpening = !item.classList.contains('is-active');
+
+            if (isOpening) {
+                item.setAttribute('open', '');
+                requestAnimationFrame(() => {
+                    item.classList.add('is-active');
+                });
+            } else {
+                item.classList.remove('is-active');
+                setTimeout(() => {
+                    item.removeAttribute('open');
+                }, 400);
+            }
+        });
+    });
+</script>
